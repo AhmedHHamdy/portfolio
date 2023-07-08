@@ -1,0 +1,52 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+/* Header */
+
+header {
+    background-color: #3b3a37;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 10%;
+    align-items: center;
+}
+
+.headerLogoName {
+    font-size: 1.7rem;
+    color: #e6a682;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.cursor {
+    color: red;
+  }
+.headerNav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    width: 50vh;
+}
+
+.headerNav ul li a {
+    font-size: 1.7rem;
+    color: #e6a682;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.headerNav ul li a:hover {
+    color: #b54745;
+}
+
+.headerNav ul li .fa-solid {
+    font-size: 2rem;
+    color: #e6a682;
+}

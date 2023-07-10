@@ -4,6 +4,8 @@ html {
 
 body {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #3b3a37;
 }
 
 /* Header */
@@ -19,13 +21,10 @@ header {
 .headerLogoName {
     font-size: 1.7rem;
     color: #e6a682;
-    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
 }
-.cursor {
-    color: red;
-  }
+
 .headerNav ul {
     display: flex;
     justify-content: space-between;
@@ -49,4 +48,72 @@ header {
 .headerNav ul li .fa-solid {
     font-size: 2rem;
     color: #e6a682;
+}
+
+
+/* Home Section */
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 13%;
+    margin-top: 5%;
+}
+
+.homeContainer {
+    width: 50%;
+}
+
+
+.homeContainer h1 {
+    font-size: 4rem;
+    color: #b54745;
+    margin: 0;
+}
+
+.homeContainer h3 {
+    font-size: 3rem;
+    color: #e6a682;
+    margin: 0;
+}
+
+.homeContainer p {
+    font-size: 1.8rem;
+    color: #e6a682;
+    margin: 2% 0;
+}
+
+
+.contactMeButton {
+    display: block;
+    background: #b54745;
+    padding: 2% 4%;
+    margin-top: 4%;
+    width: 27%;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    color: #e6a682;
+    font-size: 1.8rem;
+    transition: 0.5s;
+}
+
+.contactMeButton:hover {
+    background: rgba(181, 71, 69, 0.9);
+    color: #ecb799;
+    scale: 1.06;
+}
+
+.homeImgContainer  {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40%;
+    border-radius: 100rem;
+    /* background-color: #e6a682; */
+}
+
+.homeImgContainer img{
+    width: 80%;
+    border-radius: 100%;
 }

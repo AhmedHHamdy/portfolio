@@ -4,28 +4,11 @@ import Typed from 'typed.js'
 import '../App.css'
 
 export default function Header() {
-    // Create reference to store the DOM element containing the animation
-    const el = React.useRef(null)
-
-    useEffect(() => {
-        const typed = new Typed(el.current, {
-            strings: ['Ahmed Hamdy', 'Ahmed Hamdy'],
-            typeSpeed: 100,
-            backSpeed: 100,
-            loop: true,
-
-        })
-
-        return () => {
-            // Destroy Typed instance during cleanup to stop animation
-            typed.destroy()
-        }
-    }, [])
 
     
     return (
         <header className="header">
-            <span className='headerLogoName' ref={el} />
+            <a className='headerLogoName' href='#'>Ahmed Hamdy</a>
             <nav className="headerNav">
                 <ul>
                     <li><a href="">Home</a></li>

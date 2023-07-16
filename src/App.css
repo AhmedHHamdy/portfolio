@@ -12,7 +12,8 @@ body {
 /* Header */
 
 header {
-  background-color: #3b3a37;
+  background-color: transparent;
+  backdrop-filter: blur(10px); /* Use backdrop-filter for modern browsers */
   display: flex;
   justify-content: space-between;
   padding: 1% 10%;
@@ -42,7 +43,6 @@ header {
 }
 
 .headerNav ul li {
-  background-color: #b54745;
   padding: 2% 2.4%;
   border-radius: 0.5rem;
   transition: 0.5s;
@@ -62,6 +62,8 @@ header {
 .headerNav ul li:hover {
   scale: 1.06;
   cursor: pointer;
+  background-color: #b54745;
+
 }
 
 .headerNav ul li .fa-solid {
@@ -106,7 +108,7 @@ main {
   background: #b54745;
   padding: 2% 4%;
   margin-top: 4%;
-  width: 27%;
+  width: 30%;
   border-radius: 0.5rem;
   text-decoration: none;
   color: #e6a682;
@@ -334,4 +336,263 @@ main {
     height: 1vh;
     margin: 1% 0 3% 10%;
     border-radius: 10rem;
+}
+
+/* Projects Section */
+
+.projectsSectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 12% 0;
+}
+
+.projectsSectionContainer h2 {
+  font-size: 3rem;
+  color: #b54745;
+  margin: 0;
+}
+
+.projectsContainerCarousel {
+  width: 180vh;
+  height: 40vh;
+}
+
+.projectsContainerCarousel .react-multiple-carousel__arrow--right {
+  right: calc(0% + 1px);
+}
+
+.projectsContainerCarousel .react-multiple-carousel__arrow--left {
+  left: calc(0% + 1px);
+}
+.projectsContainerCarousel li {
+  padding: 0 0 0 3%;
+}
+
+.projectsContainerCarousel div {
+  width: 70%;
+  padding: 0 0%;
+  background-color: #3b3a37;
+  box-shadow: 0px 10px 36px 0px rgba(0, 0, 0, 0.2);
+  padding: 8%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.projectsContainerCarousel div:hover {
+  scale: 1.06;
+}
+
+.projectsContainerCarousel div h3 {
+  font-size: 1.5rem;
+  color: #b54745;
+  margin: 0;
+}
+
+
+.projectsContainerCarousel div p {
+  font-size: 1.4rem;
+  color: #e6a682;
+  margin: 0;
+  width: 100%;
+}
+
+.projectsContainerCarousel div ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 5%;
+  width: 100%;
+  padding: 0;
+  margin: 2% 0 0% 0;
+} 
+
+.projectsContainerCarousel div li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  color: #b54745;
+  padding: 0;
+}
+
+.projectsContainerCarousel a {
+  display: inline-block;
+  background: #b54745;
+  padding: 2% 2%;
+  margin: 4% 3% 0 0;
+  width: 32%;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #e6a682;
+  font-size: 1.4rem;
+  text-align: center;
+  transition: 0.5s;
+}
+
+
+.projectsContainerCarousel a:hover {
+  background: rgba(181, 71, 69, 0.9);
+  color: #ecb799;
+  scale: 1.06;
+}
+
+
+/* Contact Me Section */
+
+.ContactSectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 12% 0 0 0;
+}
+
+.ContactSectionContainer h2 {
+  font-size: 3rem;
+  color: #b54745;
+  margin: 0;
+  margin-bottom: 3%;
+}
+
+.contactInfo div p {
+  margin: 0;
+}
+
+.contactInfo {
+  display:  flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  gap: 2%;
+}
+
+.contactInfo div {
+  width: 38%;
+}
+
+.contactInfo div p {
+  font-size: 1.4rem;
+  color: #e6a682;
+  margin: 0;
+  width: 100%;
+}
+
+.emailContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.emailContainer i {
+  font-size: 5rem;
+  color: #b54745;
+  margin-right: 3%;
+}
+
+.emailContainer div h3{
+  margin: 0;
+  color: #e6a682;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.emailContainer div span{
+  margin: 0;
+  color: #e6a682;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.contactForm form input {
+  padding: 3%;
+  background-color: #e6a682;
+  border: none;
+  margin-bottom: 2%;
+  border-radius: 0.4rem;
+  color: #3b3a37;
+  font-weight: bold;
+  outline-color: #b54745;
+}
+
+.contactForm form button {
+  background-color: #b54745;
+  color: #e6a682;
+  font-size: 2rem;
+  border: 0;
+  padding: 2%;
+  border-radius: 0.4rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.contactForm form button:hover {
+  background: rgba(181, 71, 69, 0.9);
+  color: #ecb799;
+  scale: 1.01;
+}
+
+.contactForm form button i {
+  font-size: 1.8rem;
+}
+
+.contactForm form textarea {
+  padding: 3%;
+  background-color: #e6a682;
+  border: none;
+  color: #3b3a37;
+  margin-bottom: 2%;
+  font-weight: bold;
+  border-radius: 0.4rem;
+} 
+
+
+footer {
+  background-color: #b54745;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0 1% 0;
+}
+
+footer h3 {
+  font-size: 3rem;
+  color: #e6a682;
+  margin: 0;
+}
+
+footer span {
+  font-size: 2rem;
+  color: #e6a682;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  padding: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+  font-size: 2.5rem;
+  padding: 0;
+}
+
+footer ul li a {
+  color: #e6a682;
+}
+
+footer small {
+  font-size: 1.5rem;
+  color: #e6a682;
 }

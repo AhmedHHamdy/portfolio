@@ -8,7 +8,7 @@ export default function Header() {
     
     return (
         <header className="header">
-            <a className='headerLogoName' href='#'>Ahmed Hamdy</a>
+            <a className='headerLogoName' href='#'>AH.</a>
             <nav className="headerNav">
                 <ul>
                     <li><a href="">Home</a></li>

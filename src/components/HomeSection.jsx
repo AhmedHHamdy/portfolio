@@ -33,7 +33,7 @@ export default function HomeSection() {
         <h1>Hi 👋, I'm <br></br>  Ahmed Hamdy</h1>
         <h3><span className='homeContainer-job' ref={el} /></h3>
         <p>"I have a passion for designing and love to create for web, committed to a lifetime of finding solutions, and learning new things. I strive to bring joy to those around me and live with passion."</p>
-        <a className='contactMeButton' href="#">Connect With Me</a>
+        <a className='contactMeButton' href="#">Connect With Me <i class="fa-solid fa-paper-plane"></i></a>
       </section>
 
       <section className='homeImgContainer'>

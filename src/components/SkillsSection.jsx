@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 import '../App.css'
 
 export default function SkillsSection() {
-  const [frontendTab, setFrontendTab] = useState(true)
-  const [backendTab, setBackendTab] = useState(true)
-  const [otherTechTab, setOtherTechTab] = useState(true)
-  const [softSkillsTab, setSoftSkillsTab] = useState(true)
+  const [frontendTab, setFrontendTab] = useState(false)
+  const [backendTab, setBackendTab] = useState(false)
+  const [otherTechTab, setOtherTechTab] = useState(false)
+  const [softSkillsTab, setSoftSkillsTab] = useState(false)
 
 
   function clickHandleFrontendTab() {
@@ -42,6 +42,15 @@ export default function SkillsSection() {
               <div className='skillsData'>
                 <h3>HTML</h3>
                 <span></span>
+
+                <h3>CSS</h3>
+                <span></span>
+
+                <h3>JavaScript</h3>
+                <span></span>
+
+                <h3>React</h3>
+                <span></span>
               </div>
             </div>}
 
@@ -57,7 +66,13 @@ export default function SkillsSection() {
 
             {backendTab &&  <div className='skillsList'>
               <div className='skillsData'>
-                <h3>Node.Js</h3>
+                <h3>Node Js</h3>
+                <span></span>
+
+                <h3>Express</h3>
+                <span></span>
+
+                <h3>Mongo DB</h3>
                 <span></span>
               </div>
             </div>}
@@ -76,7 +91,13 @@ export default function SkillsSection() {
 
             {otherTechTab && <div className='skillsList'>
               <div className='skillsData'>
-                <h3>Node.Js</h3>
+                <h3>Tailwind CSS</h3>
+                <span></span>
+
+                <h3>Postman</h3>
+                <span></span>
+
+                <h3>Git</h3>
                 <span></span>
               </div>
             </div>}

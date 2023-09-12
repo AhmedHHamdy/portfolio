@@ -1,12 +1,14 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import '../App.css'
+import { DarkModeContext } from '../Pages/HomePage'
 
 export default function SkillsSection() {
-  const [frontendTab, setFrontendTab] = useState(false)
+  const [frontendTab, setFrontendTab] = useState(true)
   const [backendTab, setBackendTab] = useState(false)
   const [otherTechTab, setOtherTechTab] = useState(false)
   const [softSkillsTab, setSoftSkillsTab] = useState(false)
 
+  const {darkMode, setDarkMode} = useContext(DarkModeContext)
 
   function clickHandleFrontendTab() {
     setFrontendTab(previousValue => !previousValue)
@@ -25,7 +27,7 @@ export default function SkillsSection() {
   }
 
   return (
-    <section className='skillsSectionContainer'>
+    <section id="skills" className='skillsSectionContainer' data-aos="fade-up">
       <h2>Skills & Tools</h2>
       <section className='skillsContainer'>
 
@@ -94,11 +96,16 @@ export default function SkillsSection() {
                 <h3>Tailwind CSS</h3>
                 <span></span>
 
+                <h3>Mongoose</h3>
+                <span></span>
+
                 <h3>Postman</h3>
                 <span></span>
 
                 <h3>Git</h3>
                 <span></span>
+
+
               </div>
             </div>}
           </div>
@@ -113,7 +120,13 @@ export default function SkillsSection() {
 
             {softSkillsTab && <div className='skillsList'>
               <div className='skillsData'>
-                <h3>Node.Js</h3>
+                <h3>Project Management</h3>
+                <span></span>
+
+                <h3>Problem Solving</h3>
+                <span></span>
+
+                <h3>Adaptability</h3>
                 <span></span>
               </div>
             </div>}

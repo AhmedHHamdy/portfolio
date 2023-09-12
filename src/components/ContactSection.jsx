@@ -1,16 +1,36 @@
-import { useState, useEffect } from 'react'
+import { useRef } from 'react'
+import emailjs from 'emailjs-com'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import '../App.css'
 
 export default function ContactSection() {
-  return (
-    <section className='ContactSectionContainer'>
-      <h2>Contact Me</h2>
+  const notify = () => toast("Message Sent");
 
-      <section className='contactInfo'>
+  const form = useRef();
+
+  async function sendEmail(e) {
+    e.preventDefault()
+    try {
+      await emailjs.sendForm('service_ypxcyww', 'template_q6xzxce', form.current, 'qZrVeT9nInjm361MU')
+      e.target.reset()
+      // notify()
+      // alert("message successfully sent");
+    } catch (error) {
+      console.log(error);
+      e.target.reset()
+    }
+  }
+
+  return (
+    <section  className='ContactSectionContainer' data-aos="fade-up">
+      <h2 id="contact">Contact Me</h2>
+
+      <section  className='contactInfo'>
         <div>
-          <p>My name is Ahmed Hamdy. I am a Full-Stack Software Engineer specializing in the MERN stack. I have a passion for designing and love to create for web, committed to a lifetime of finding solutions, and learning new things. I strive to bring joy to those around me and live with passion. I know how to create your website to run across devices using the latest technologies available. My goals are to focus on typography, content and conveying the message that you want to send.</p>
+          <p>My goal is to provide responsive and accessible websites to small businesses and individuals around me. Whether you are looking for a new website, or updating an existing website for the mobile age, I can help. Providing a location where interested parties can learn about you is what I offer. How can I help you today?</p>
           <div className='emailContainer'>
-              <i class="fa-regular fa-envelope"></i>
+              <i className="fa-regular fa-envelope"></i>
               <div>
                 <h3>Email</h3>
                 <span>Thisisahmedhamdy@gmail.com</span>
@@ -19,11 +39,11 @@ export default function ContactSection() {
         </div>
 
         <div className='contactForm'>
-          <form action="">
+          <form ref={form} onSubmit={sendEmail}>
             <input type="text" name='name' placeholder='Name' />
-            <input type="email" name='name' placeholder='Email' />
+            <input type="email" name='email' placeholder='Email' />
             <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-            <button>Send Message <i class="fa-regular fa-message"></i></button>
+            <button onClick={notify}>Send Message <i className="fa-regular fa-message"></i></button>
           </form>
         </div>
       </section>
@@ -33,9 +53,9 @@ export default function ContactSection() {
         <span>Software Engineer</span>
 
         <ul>
-          <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-github"></i></a></li>
-          <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href=""><i className="fa-brands fa-linkedin"></i></a></li>
+          <li><a href=""><i className="fa-brands fa-github"></i></a></li>
+          <li><a href=""><i className="fa-brands fa-twitter"></i></a></li>
         </ul>
 
         <small>© Ahmed Hamdy | All rights reserved | {new Date(Date.now()).getFullYear()}</small>

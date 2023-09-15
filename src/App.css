@@ -23,6 +23,7 @@ body.lightMode-body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   background-color: var(--bg-300);
+  transition: background 0.2s linear;
 }
 
 /* Header */
@@ -410,27 +411,35 @@ main {
   left: calc(0% + 1px);
 }
 .projectsContainerCarousel li {
-  padding: 0 0 0 3%;
+  padding: 0 0.9% 0 0.9%;
 }
 
 .projectsContainerCarousel div {
-  width: 70%;
+  width: 78%;
   padding: 0 0%;
-  background-color: #3b3a37;
+  height: 55vh;
+  /* background-color: #3b3a37; */
+  background: rgba(0, 0, 0, 0.0);
   box-shadow: 0px 10px 36px 0px rgba(0, 0, 0, 0.2);
   padding: 8%;
   cursor: pointer;
-  transition: 0.1s;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .projectsContainerCarousel div:hover {
-  scale: 1.06;
+  /* scale: 1.06; */
 }
 
 .projectsContainerCarousel div h3 {
   font-size: 1.5rem;
   color: #b54745;
   margin: 0;
+  text-align: center;
 }
 
 
@@ -439,11 +448,12 @@ main {
   color: #e6a682;
   margin: 0;
   width: 100%;
+  text-align: center;
 }
 
 .projectsContainerCarousel div ul {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 5%;
   width: 100%;
@@ -454,6 +464,7 @@ main {
 .projectsContainerCarousel div li {
   list-style-type: none;
   font-size: 1.5rem;
+  font-weight: 500;
   color: #b54745;
   padding: 0;
 }
@@ -461,9 +472,9 @@ main {
 .projectsContainerCarousel a {
   display: inline-block;
   background: #b54745;
-  padding: 2% 2%;
-  margin: 4% 3% 0 0;
-  width: 32%;
+  padding: 1rem 1.2rem;
+  /* margin: 4% 3% 0 0; */
+  /* width: 32%; */
   border-radius: 0.5rem;
   text-decoration: none;
   color: #e6a682;
@@ -472,6 +483,16 @@ main {
   transition: 0.5s;
 }
 
+div.project-links {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  flex-direction: row;
+  box-shadow: none;
+}
 
 .projectsContainerCarousel a:hover {
   background: rgba(181, 71, 69, 0.9);
@@ -480,9 +501,21 @@ main {
 }
 
 .projectsContainerCarousel .img-container {
- width: 84%;
- height: 25vh;
- margin-bottom: 2rem;
+  /* width: 100%;
+  height: 35vh; */
+  width: 40vh;
+  height: 20vh;
+
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.projectsContainerCarousel .img-container  img {
+
+  /* height: 30vh;
+  width: auto; */
+  /* width: 100%; */
+  height: 100%;
 }
 
 
@@ -689,6 +722,28 @@ footer small {
   .menu {
     display: none;
   }
+
+  .projectsContainerCarousel div {
+    width: 78%;
+  }
+
+  .projectsContainerCarousel .img-container {
+    /* width: 100%;
+    height: 35vh; */
+    width: 30vh;
+    height: 20vh;
+  
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+  
+  .projectsContainerCarousel .img-container  img {
+  
+    /* height: 30vh;
+    width: auto; */
+    /* width: 100%; */
+    height: 100%;
+  }
 }
 
 @media screen and (min-width:1322px) and (max-width:1500px) {
@@ -736,7 +791,7 @@ footer small {
 
   .projectsContainerCarousel  {
     height: 130vh;
-    width: 150vh;
+    width: 125vh;
   }
 
   .projectsContainerCarousel div {
@@ -744,7 +799,7 @@ footer small {
   }
 
   .projectsContainerCarousel .img-container {
-    height: 30vh;
+    height: 20vh;
 
   }
 
@@ -770,7 +825,7 @@ footer small {
 
   .projectsContainerCarousel  {
     height: 130vh;
-    width: 98vh;
+    width: 86vh;
   }
 
   .projectsContainerCarousel div {
@@ -778,12 +833,12 @@ footer small {
   }
 
   .projectsContainerCarousel .img-container {
-    height: 50vh;
+    height: 30vh;
 
   }
 
   .projectsContainerCarousel div:hover {
-    scale: 1;
+    /* scale: 1; */
   }
 
   .aboutSectionData  {
@@ -820,6 +875,30 @@ footer small {
 
   .skillsSectionContainer {
     margin-bottom: 8rem;
+  }
+
+  .projectsSectionContainer {
+    width: 50vh;
+    margin: 0 auto;
+  }
+
+  .projectsContainerCarousel  {
+    height: 130vh;
+    width: 50vh;
+  }
+
+
+  .projectsContainerCarousel div {
+    width: 35vh;
+  }
+
+  .projectsContainerCarousel .img-container {
+    height: 18vh;
+    width: 30vh;
+  }
+
+  .projectsContainerCarousel div:hover {
+    /* scale: 1; */
   }
 }
 
@@ -906,12 +985,12 @@ footer small {
   }
 
   .projectsContainerCarousel .img-container {
-    height: 50vh;
+    height: 20vh;
 
   }
 
   .projectsContainerCarousel div:hover {
-    scale: 1;
+    /* scale: 1; */
   }
 
   .homeImgContainer {
@@ -1087,8 +1166,8 @@ footer small {
   }
 
   .projectsContainerCarousel  {
-    height: 60vh;
-    width: 50vh;
+    height: 70vh;
+    width: 43vh;
   }
 
   .projectsContainerCarousel div {
@@ -1096,12 +1175,12 @@ footer small {
   }
 
   .projectsContainerCarousel .img-container {
-    height: 20vh;
-
+    height: 16vh;
+    width: 30vh;
   }
 
   .projectsContainerCarousel div:hover {
-    scale: 1;
+    /* scale: 1; */
   }
 
   .projectsContainerCarousel a {
@@ -1280,21 +1359,32 @@ footer small {
   }
 
   .projectsContainerCarousel  {
-    height: 75vh;
-    width: 35vh;
+    height: 70vh;
+    width: 30vh;
   }
 
   .projectsContainerCarousel div {
     width: 20vh;
+    height: 60vh;
   }
 
   .projectsContainerCarousel .img-container {
-    height: 20vh;
+    height: 10vh;
+    width: 10vh;
 
   }
 
+  .projectsContainerCarousel .project-links a {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+
   .projectsContainerCarousel div:hover {
-    scale: 1;
+    /* scale: 1; */
+  }
+
+  .projectsContainerCarousel .project-links {
+    flex-direction: column;
   }
 
   .projectsContainerCarousel a {
@@ -1358,8 +1448,8 @@ footer small {
 
 .header-dark ul li .fa-solid {
   color: var(--bg-200);
-}
- */
+} */
+
 
 
 .darkModeCarousel div {
@@ -1386,4 +1476,6 @@ footer small {
 
 .darkMode-body {
   background: var(--bg-100);
+  background: rgba(0, 0, 0, 0.8);
+  transition: background 0.2s linear;
 }

@@ -68,7 +68,7 @@ export default function Header() {
                     <li className={activeSection === 'skills' ? 'active' : ''} onClick={() => scrollToSection('skills')}><a >Skills</a></li>
                     <li className={activeSection === 'projects' ? 'active' : ''} onClick={() => scrollToSection('projects')}><a >Projects</a></li>
                     <li className={activeSection === 'contact' ? 'active' : ''} onClick={() => scrollToSection('contact')}><a >Contact Me</a></li>
-                    <li onClick={toggleDarkMode}><i className={darkMode ? "fa-solid fa-moon" : "fa-solid fa-sun"}></i></li>
+                    {/* <li onClick={toggleDarkMode}><i className={darkMode ? "fa-solid fa-moon" : "fa-solid fa-sun"}></i></li> */}
                 </ul>
             </nav>
 

@@ -7,7 +7,7 @@ import lmarBeautyGif from "../assets/lmarBeautyGif.gif"
 import listifyGif from "../assets/listfyGif.gif"
 import ayeshaGif from "../assets/ayeshaGif.gif"
 import stickyNotesGif from "../assets/stickyNoteGif.gif"
-import passwordManagerGif from "../assets/passwordManagerGif.gif"
+import passwordManagerGIf from "../assets/passwordManagerGIf.gif"
 import backeryGif from "../assets/backeryGif.gif"
 
 
@@ -145,7 +145,7 @@ export default function ProjectsSection() {
 
           <div>
             <div className='img-container'>
-              <img src={passwordManagerGif} alt="password manager app gif" />
+              <img src={passwordManagerGIf} alt="password manager app gif" />
             </div>
             <h3>Password Manager</h3>
             <p>A full-stack app that enables users to generate passwords with customizable password generation.</p>

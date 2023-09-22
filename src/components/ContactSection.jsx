@@ -53,9 +53,9 @@ export default function ContactSection() {
         <span>Software Engineer</span>
 
         <ul>
-          <li><a href=""><i className="fa-brands fa-linkedin"></i></a></li>
-          <li><a href=""><i className="fa-brands fa-github"></i></a></li>
-          <li><a href=""><i className="fa-brands fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/ahmedhhamdy/"><i className="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/AhmedHHamdy"><i className="fa-brands fa-github"></i></a></li>
+          <li><a href="https://twitter.com/AhmedHHamdyx"><i className="fa-brands fa-twitter"></i></a></li>
         </ul>
 
         <small>© Ahmed Hamdy | All rights reserved | {new Date(Date.now()).getFullYear()}</small>

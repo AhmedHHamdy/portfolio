@@ -9,6 +9,7 @@ import ayeshaGif from "../assets/ayeshaGif.gif"
 import stickyNotesGif from "../assets/stickyNoteGif.gif"
 import passwordManagerGIf from "../assets/passwordManagerGIf.gif"
 import backeryGif from "../assets/backeryGif.gif"
+import vanlifeGif from "../assets/vanlifegif.gif"
 
 
 import '../App.css'
@@ -43,7 +44,7 @@ export default function ProjectsSection() {
       <h2 id="projects">Projects</h2>
       {/* <section className='projectsContainer'> */}
         <Carousel className={`projectsContainerCarousel ${darkMode ? "darkModeCarousel" : ""} `} responsive={responsive}>
-        <div>
+          <div>
             <div className='img-container'>
               <img src={backeryGif} alt="cupcaked e-shop gif" />
             </div>
@@ -65,6 +66,25 @@ export default function ProjectsSection() {
 
           <div>
             <div className='img-container'>
+              <img src={vanlifeGif} alt="vanLife gif" />
+            </div>
+
+            <h3>VanLife</h3>
+            <p>A van rental platform empowering users to effortlessly list and price their vans for travel adventures.</p>
+            <ul>
+              <li>React</li>
+              <li>Firebase</li>
+            </ul>
+            <div className='project-links'>
+              <a href="https://github.com/AhmedHHamdy/van-life">Git Repo. <i className="fa-brands fa-github"></i></a>
+              <a href="https://van-life-nu.vercel.app/" >Deployed <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          
+          
+
+          <div>
+            <div className='img-container'>
               <img src={lmarBeautyGif} alt="lmarBeauty clinic gif" />
             </div>
 
@@ -81,7 +101,7 @@ export default function ProjectsSection() {
             </div>
           </div>
 
-        <div>
+          <div>
             <div className='img-container'>
               <img src={stickyNotesGif} alt="sticky notes gif" />
             </div>

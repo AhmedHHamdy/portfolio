@@ -34,7 +34,7 @@ export default function HomeSection() {
         <h3><span className='homeContainer-job' ref={el} /></h3>
         <p>"I have a passion for designing and love to create for web, committed to a lifetime of finding solutions, and learning new things. I strive to bring joy to those around me and live with passion."</p>
         <a className='contactMeButton' href="#contact">Connect With Me <i className="fa-solid fa-paper-plane"></i></a>
-        <a className='resumeButton' href="https://docs.google.com/document/d/1EUXD8a3ne2LFmQ9AqMFd8OEmRKQz_sQmurkjYYt0yr8/edit?usp=sharing">Resume <i className="fa-solid fa-file"></i></a>
+        <a className='resumeButton' href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:ae9cad28-212a-4193-a25f-3d0f6245f695">Resume <i className="fa-solid fa-file"></i></a>
 
       </section>
 

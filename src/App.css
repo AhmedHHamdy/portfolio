@@ -80,7 +80,8 @@ header {
 .headerNav ul li:hover {
   scale: 1.06;
   cursor: pointer;
-  background-color: #b54745;
+  /* background-color: #b54745; */
+  background: oklch(21% 0.034 264.665);
 
 }
 
@@ -105,25 +106,30 @@ main {
 
 .homeContainer h1 {
   font-size: 4rem;
-  color: #b54745;
+  /* color: #b54745; */
+  color: #e6a682;
+  /* color: oklch(70% 0.015 286.067); */
   margin: 0;
 }
 
 .homeContainer h3 {
   font-size: 2.5rem;
-  color: #e6a682;
+  /* color: #e6a682; */
+  color: oklch(70% 0.015 286.067);
   margin: 2% 0 0 0;
 }
 
 .homeContainer p {
   font-size: 1.8rem;
-  color: #e6a682;
+  /* color: #e6a682; */
+  color: oklch(70% 0.015 286.067);
   margin: 3% 0 0 0;
 }
 
 .contactMeButton, .resumeButton {
   display: inline-block;
-  background: #b54745;
+  /* background: #b54745; */
+  background: oklch(21% 0.034 264.665);
   padding: 2% 4%;
   margin-top: 5%;
   border-radius: 0.5rem;
@@ -136,7 +142,8 @@ main {
 }
 
 .contactMeButton:hover, .resumeButton:hover {
-  background: rgba(181, 71, 69, 0.9);
+  /* background: rgba(181, 71, 69, 0.9); */
+  background-color: oklch(14% 0.033 256.848);
   color: #ecb799;
   transform: scale(1.06); /* You can adjust the scaling factor as needed */
 
@@ -228,14 +235,15 @@ main {
 
 .aboutSectionContainer h2 {
     font-size: 3rem;
-    color: #b54745;
+    /* color: #b54745; */
+    color: #e6a682;
     margin: 0 ;
     text-align: center;
 }
 
 .aboutSectionContainer p {
     font-size: 1.8rem;
-    color: #e6a682;
+    color: oklch(70% 0.015 286.067);
     margin: 1% 0 0 0;
     width: 60%;
     line-height: 1.5;
@@ -310,9 +318,10 @@ main {
 
 
 .skillsSectionContainer h2 {
-    font-size: 3rem;
-    color: #b54745;
-    margin: 0;
+  font-size: 3rem;
+  /* color: #b54745; */
+  color: #e6a682;
+  margin: 0;
 }
 
 
@@ -344,7 +353,9 @@ main {
 .skillsHeader .fa-solid {
     font-size: 2.2rem;
     margin-right: 20px;
-    color: #b54745;
+    /* color: #b54745; */
+    color: #e6a682;
+    /* color: oklch(70% 0.015 286.067); */
 }
 
 .skillsHeader .fa-solid:last-child {
@@ -356,7 +367,7 @@ main {
     font-size: 2rem;
     margin: 0;
     text-align: left;
-    color: #e6a682;
+    color: oklch(70% 0.015 286.067);
     width: 100%;
 }
 
@@ -369,14 +380,17 @@ main {
     font-size: 1.5rem;
     margin: 3% 0 0 10%;
     text-align: left;
-    color: #e6a682;
+    /* color: #e6a682; */
+    color: oklch(70% 0.015 286.067);
     width: 100%;
 }
 
 .skillsData span {
     display: block;
     width: 90%;
-    background: #b54745;
+    /* background: #b54745; */
+    background: #e6a682;
+
     height: 1vh;
     margin: 1% 0 3% 10%;
     border-radius: 10rem;
@@ -394,7 +408,8 @@ main {
 
 .projectsSectionContainer h2 {
   font-size: 3rem;
-  color: #b54745;
+  /* color: #b54745; */
+  color: #e6a682;
   margin: 0;
 }
 
@@ -437,7 +452,8 @@ main {
 
 .projectsContainerCarousel div h3 {
   font-size: 1.5rem;
-  color: #b54745;
+  /* color: #b54745; */
+  color: #e6a682;
   margin: 0;
   text-align: center;
 }
@@ -445,7 +461,7 @@ main {
 
 .projectsContainerCarousel div p {
   font-size: 1.4rem;
-  color: #e6a682;
+  color: oklch(70% 0.015 286.067);
   margin: 0;
   width: 100%;
   text-align: center;
@@ -455,7 +471,7 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5%;
+  gap: 1rem;
   width: 100%;
   padding: 0;
   margin: 2% 0 0% 0;
@@ -465,13 +481,17 @@ main {
   list-style-type: none;
   font-size: 1.5rem;
   font-weight: 500;
-  color: #b54745;
-  padding: 0;
+  background: oklch(21% 0.034 264.665);
+  /* color: #b54745; */
+  color: #e6a682;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .projectsContainerCarousel a {
   display: inline-block;
-  background: #b54745;
+  /* background: #b54745; */
+  background: oklch(21% 0.034 264.665);
   padding: 1rem 1.2rem;
   /* margin: 4% 3% 0 0; */
   /* width: 32%; */
@@ -495,7 +515,8 @@ div.project-links {
 }
 
 .projectsContainerCarousel a:hover {
-  background: rgba(181, 71, 69, 0.9);
+  /* background: rgba(181, 71, 69, 0.9); */
+  background-color: oklch(14% 0.033 256.848);
   color: #ecb799;
   scale: 1.06;
 }
@@ -521,7 +542,8 @@ div.project-links {
 
 .projectsSectionContainer  h3 {
   font-size: 2rem;
-  color: #b54745;
+  /* color: #b54745; */
+  color: #ecb799;
   margin-top: 8rem;
 }
 
@@ -537,7 +559,8 @@ div.project-links {
 
 .ContactSectionContainer h2 {
   font-size: 3rem;
-  color: #b54745;
+  /* color: #b54745; */
+  color: #ecb799;
   margin: 0;
   margin-bottom: 3%;
 }
@@ -559,7 +582,8 @@ div.project-links {
 
 .contactInfo div p {
   font-size: 1.4rem;
-  color: #e6a682;
+  /* color: #e6a682; */
+  color: oklch(70% 0.015 286.067);
   margin: 0;
   width: 100%;
 }
@@ -573,7 +597,8 @@ div.project-links {
 
 .emailContainer i {
   font-size: 5rem;
-  color: #b54745;
+  /* color: #b54745; */
+  color: #e6a682;
   margin-right: 3%;
 }
 
@@ -600,18 +625,20 @@ div.project-links {
 
 .contactForm form input {
   padding: 3%;
-  background-color: #e6a682;
+  /* background-color: #e6a682; */
+  background: oklch(21% 0.034 264.665);
   border: none;
   margin-bottom: 2%;
   border-radius: 0.4rem;
-  color: #3b3a37;
+  color: white;
   font-weight: bold;
   outline-color: #b54745;
 }
 
 .contactForm form button {
-  background-color: #b54745;
+  /* background-color: #b54745; */
   color: #e6a682;
+  background: oklch(21% 0.034 264.665);
   font-size: 2rem;
   border: 0;
   padding: 2%;
@@ -621,7 +648,8 @@ div.project-links {
 }
 
 .contactForm form button:hover {
-  background: rgba(181, 71, 69, 0.9);
+  /* background: rgba(181, 71, 69, 0.9); */
+  background-color: oklch(14% 0.033 256.848);
   color: #ecb799;
   scale: 1.01;
 }
@@ -632,9 +660,10 @@ div.project-links {
 
 .contactForm form textarea {
   padding: 3%;
-  background-color: #e6a682;
+  /* background-color: #e6a682; */
+  background: oklch(21% 0.034 264.665);
   border: none;
-  color: #3b3a37;
+  color: white;
   margin-bottom: 2%;
   font-weight: bold;
   border-radius: 0.4rem;
@@ -642,7 +671,8 @@ div.project-links {
 
 
 footer {
-  background-color: #b54745;
+  /* background-color: #b54745; */
+  background: oklch(21% 0.034 264.665);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -708,7 +738,8 @@ footer small {
 }
 
 .active {
-  background-color: #b54745;
+  /* background-color: #b54745; */
+  background: oklch(21% 0.034 264.665);
 }
 
 .darkModeActive {
@@ -916,7 +947,8 @@ footer small {
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    background-color: #b54745;
+    /* background-color: #b54745; */
+    background: oklch(21% 0.034 264.665);
     width: 10vh;
     border-radius: 0.5rem;
     right: 4.3rem;
@@ -927,7 +959,8 @@ footer small {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #b54745;
+    /* background: #b54745; */
+    background: oklch(21% 0.034 264.665);
     border: none;
     color: #e6a682;
     font-size: 2rem;
@@ -955,7 +988,8 @@ footer small {
   }
 
   .menu-container div:hover {
-    background: rgba(160, 60, 58, 0.8);
+    /* background: rgba(160, 60, 58, 0.8); */
+    background: oklch(13% 0.028 261.692);
   }
 
 
@@ -1475,7 +1509,8 @@ footer small {
 
 
 .darkMode-body {
-  background: var(--bg-100);
-  background: rgba(0, 0, 0, 0.8);
+  /* background: var(--bg-100); */
+  /* background: rgba(0, 0, 0, 0.8); */
+  background: oklch(27% 0.033 256.848);
   transition: background 0.2s linear;
 }
